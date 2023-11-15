@@ -1,0 +1,57 @@
+	2023--11--15--11--01--39--442692
+	image_path: ./data/train/train_data/anime_faces/*.png
+	label_path: ./data/train/train_label
+	test_path: ./test
+	log_path: ./log
+	result_path: ./result
+	model_save: ./model
+	keep_arg: ./arg/hyp
+	lr: 0.0002
+	lr_max: 0.0002
+	lr_min: 2e-05
+	cosine_annealing: True
+	epochs: 300
+	batch_size: 64
+	mixed_float16: False
+	gbatch_size: 10
+	num_processes: 4
+	loss_type: L2
+	schedule: cosine
+	schedule_low: 0.0001
+	schedule_high: 0.02
+	T: 1000
+	load_weight: False
+	save_model_count: 1000
+	test_sample: 16
+	test_count: 10
+	EMA: True
+	EMA_decay: 0.999
+	clip: True
+	clip_value: 0.5
+	regularization: None
+	regularization_strength: 1e-05
+	elastic_eta: 0.5
+	model_sample: DDIP
+	DDIM_sample_times: 50
+	DDIM_ETA: 0.0
+	activate: swich
+	dropout_rate: 0.0
+	BN_num_batch: 4
+	use_attention_down: [False, False, True, True, False, False, True, True]
+	self_attention_down: [False, False, False, False, False, False, False, False]
+	use_attention_mid: [False, False]
+	self_attention_mid: [False, False]
+	use_attention_up: [True, True, False, False, True, True, False, False]
+	self_attention_up: [False, False, False, False, False, False, False, False]
+	optimizer: Adam
+	EPS: 1e-08
+	BETA_1: 0.9
+	BETA_2: 0.99
+	TIMES_CHANNELS: 256
+	UNET_CHANNELS_DOWN: [32, 32, 64, 64, 128, 128, 256, 256]
+	UNET_CHANNELS_MID: [512, 512]
+	UNET_CHANNELS_UP: [256, 256, 128, 128, 64, 64, 32, 32]
+	INICONV_CHANNELS: 32
+	TIME_EMB_CHANNELS: 128
+	PATCH_SIZE: 64
+	IMAGE_INPUT_SIZE: 64

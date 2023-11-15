@@ -1,17 +1,4 @@
 import tensorflow as tf
-# class EMA:
-#     def __init__(self, decay):
-#         self.decay = decay
-#     def update_average(self, old, new):
-#         if old is None:
-#             return new
-#         return old * self.decay + (1 - self.decay) * new
-#
-#     def update_model_average(self, ema_model, current_model):
-#
-#         for i,(ema_params, current_params) in enumerate(zip(ema_model.trainable_variables, current_model.trainable_variables)):
-#             old, new = ema_params,current_params
-#             ema_params.assign(self.update_average(old, new))
 
 class EMA:
     def __init__(self, decay):

@@ -41,7 +41,7 @@ def easy_arg():
     parser.add_argument("--elastic-eta", type=float, default=0.5,                                               help="Elastic eta")
 
     '''-----DDIM------'''
-    parser.add_argument("--model-sample", choices=["DDIP", "DDMP"], default="DDIP",                             help="Model sample type")
+    parser.add_argument("--model-sample", choices=["DDIM", "DDPM"], default="DDIM",                             help="Model sample type")
     parser.add_argument("--DDIM-sample-times", type=int, default=50,                                            help="Number of DDIM sample times (must be a multiple of this value)")
     parser.add_argument("--DDIM-ETA", type=float, default=0.0,                                                  help="DDIM ETA")
 
